@@ -3,6 +3,7 @@ import tensorflow as tf
 from net.model import Blindinpaint_model
 from data.data import DataLoader
 from options.train_options import TrainOptions
+from tqdm import tqdm
 
 
 class BlindInpaint_Trainer:
@@ -79,8 +80,7 @@ class BlindInpaint_Trainer:
             coord = tf.train.Coordinator()
             thread = tf.train.start_queue_runners(sess=sess, coord=coord)
 
-            for step in range(1, self.config.max_iters + 1):
-
+            for step in tqdm(range(1, self.config.max_iters + 1)):
                 if self.config.pretrain_network is False:
                     for _ in range(self.config.d_iters):
                         _, d_loss = sess.run([d_train_op, losses['d_loss']])

@@ -1,0 +1,8 @@
+imgs/masks/mask_4.png
+imgs/masks/mask_5.png
+imgs/masks/mask_7.png
+imgs/masks/mask_6.png
+imgs/masks/mask_2.png
+imgs/masks/mask_3.png
+imgs/masks/mask_1.png
+imgs/masks/mask_8.png

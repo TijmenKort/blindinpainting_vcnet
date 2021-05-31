@@ -9,9 +9,10 @@ class DataLoader:
         getFileList = lambda f: open(f, 'rt').read().splitlines() \
             if os.path.isfile(f) else glob.glob(os.path.join(f, '*.png')) + glob.glob(os.path.join(f, '*.jpg'))
 
+        print(file_out)
         self.file_in = getFileList(file_in)
         self.file_out = getFileList(file_out)
-
+        print(self.file_out)
         self.paired = paired
         if paired is False:
             np.random.shuffle(self.file_out)

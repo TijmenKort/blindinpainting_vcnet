@@ -14,7 +14,8 @@ class TrainOptions:
             'paris_streetview': '/data/yiwang/download/paris_streetview/paris_train_original/keys.txt',
             'places2full': '/data/yiwang/download/train_large.txt',
             'adobe_5k': '/data/yiwang/download/adobe_5k_train.txt',
-            'celeba_wild': '/data/yiwang/download/train_celeba_wild.txt'
+            'celeba_wild': '/data/yiwang/download/train_celeba_wild.txt',
+            'ffhq': 'data/ffhq/train.txt'
         }
 
     def initialize(self):
